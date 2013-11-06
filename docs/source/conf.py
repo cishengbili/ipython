@@ -52,7 +52,7 @@ extensions = [
     'github',  # for easy GitHub links
 ]
 
-if ON_RTD:
+if ON_RTD or True:
     # Remove extensions not currently supported on RTD
     extensions.remove('matplotlib.sphinxext.only_directives')
     extensions.remove('matplotlib.sphinxext.mathmpl')
@@ -120,7 +120,7 @@ exclude_dirs = ['attic']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'pygments.styles.tango.TangoStyle'
 
 
 # Options for HTML output
@@ -235,3 +235,7 @@ texinfo_documents = [
 # delete release info to avoid pickling errors from sphinx
 
 del iprelease
+
+def setup(app):
+    from IPython.nbconvert.utils.lexers import IPythonLexer
+    app.add_lexer('ipython', IPythonLexer())

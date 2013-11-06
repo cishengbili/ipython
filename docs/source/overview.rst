@@ -1,43 +1,34 @@
 .. _overview:
 
-============
-Introduction
-============
+====
+引言
+====
 
-Overview
-========
+概览
+====
 
-One of Python's most useful features is its interactive interpreter.
-It allows for very fast testing of ideas without the overhead of
-creating test files as is typical in most programming languages.
-However, the interpreter supplied with the standard Python distribution
-is somewhat limited for extended interactive use.
+Python最实用的功能之一是它的交互式解释器.
+它可以非常快让你试验你的想法, 不用像大多数编程语言那样多出创建测试文件的开销.
+然而, Python发行版的解释器很难扩展, 并且交互性也不太好.
 
-The goal of IPython is to create a comprehensive environment for
-interactive and exploratory computing.  To support this goal, IPython
-has three main components:
+IPython的目标是要建立一个具有互动性和可探索的全面的计算环境.
+为了达成这一目标, IPython有三个主要的组件:
 
-* An enhanced interactive Python shell.
-* A decoupled :ref:`two-process communication model <ipythonzmq>`, which
-  allows for multiple clients to connect to a computation kernel, most notably
-  the web-based :ref:`notebook <htmlnotebook>`
-* An architecture for interactive parallel computing.
+* 增强的交互式Python shell.
+* 一个去耦合的 :ref:`进程间通信模型 <ipythonzmq>`, 它允许多个客户端连接到一个计算内核,
+  最引人瞩目的案例是基于Web的 :ref:`notebook <htmlnotebook>`
+* 一个交互式并行计算架构.
 
-All of IPython is open source (released under the revised BSD license).
+IPython是开源的 (基于修订过的BSD许可证发布).
 
-Enhanced interactive Python shell
-=================================
+增强的交互式Python shell
+========================
 
-IPython's interactive shell (:command:`ipython`), has the following goals,
-amongst others:
+IPython的交互式shell (:command:`ipython`), 实现了以下目标:
 
-1. Provide an interactive shell superior to Python's default. IPython
-   has many features for tab-completion, object introspection, system shell
-   access, command history retrieval across sessions, and its own special
-   command system for adding functionality when working interactively. It
-   tries to be a very efficient environment both for Python code development
-   and for exploration of problems using Python objects (in situations like
-   data analysis).
+1. 提供一个比Python默认shell好的交互式shell. IPython在交互式模式中添加了tab键自动完成,
+   包含对象自省, 系统shell访问, 检索跨会话的命令历史, 和IPython自己的特殊指令系统.
+   它试图为开发代码和勘察问题(如进行数据分析)提供一个高效的环境.
   
 2. Serve as an embeddable, ready to use interpreter for your own
    programs. An interactive IPython shell can be started with a single call
