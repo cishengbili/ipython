@@ -30,11 +30,9 @@ IPython的交互式shell (:command:`ipython`), 实现了以下目标:
    包含对象自省, 系统shell访问, 检索跨会话的命令历史, 和IPython自己的特殊指令系统.
    它试图为开发代码和勘察问题(如进行数据分析)提供一个高效的环境.
   
-2. Serve as an embeddable, ready to use interpreter for your own
-   programs. An interactive IPython shell can be started with a single call
-   from inside another program, providing access to the current namespace.
-   This can be very useful both for debugging purposes and for situations
-   where a blend of batch-processing and interactive exploration are needed.
+2. 在你自己的程序中充当一个可嵌入的, 随时可用的解释器.
+   在一个程序内部可以简单地调用一个IPython shell, 并且可以访问当前的命名空间.
+   这样的功能在调试时是非常有用的.
   
 3. Offer a flexible framework which can be used as the base
    environment for working with other systems, with Python as the underlying
@@ -47,8 +45,8 @@ IPython的交互式shell (:command:`ipython`), 实现了以下目标:
    OS X applications via special threading flags. The normal Python
    shell can only do this for Tkinter applications.
 
-Main features of the interactive shell
---------------------------------------
+交互式shell的主要功能
+-------------------------
 
 * Dynamic object introspection. One can access docstrings, function
   definition prototypes, source code, source files and other details
@@ -183,7 +181,7 @@ Main features of the interactive shell
 
 .. _ipythonzmq:
 
-Decoupled two-process model
+解耦合的双进程模型
 ==============================
 
 IPython has abstracted and extended the notion of a traditional
@@ -218,7 +216,7 @@ and clients.
     `Frontend/Kernel Model`_ example notebook
 
 
-Interactive parallel computing
+交互式并行计算
 ==============================
 
 Increasingly, parallel computer hardware, such as multicore CPUs, clusters and
@@ -261,21 +259,24 @@ The main features of this system are:
 For more information, see our :ref:`overview <parallel_index>` of using IPython
 for parallel computing.
 
-Portability and Python requirements
+可移植性和Python依赖
 -----------------------------------
 
-As of the 1.0 release, IPython works with Python 2.6, 2.7, 3.2 and 3.3.
-Version 0.12 introduced full support for Python 3. Version 0.11 worked with
-Python 2.6 and 2.7 only. Versions 0.9 and 0.10 worked with Python 2.4 and
-above (not including Python 3).
+* 1.0 版本的IPython支持Python 2.6, 2.7, 3.2 和 3.3.
 
-IPython is known to work on the following operating systems:
+* 0.12 版本开始全面支持Python 3.
+
+* 0.11 版本仅支持Python 2.6 和 2.7.
+
+* 0.9 和 0.10 版本支持Python 2.4以上的版本 (不包括Python 3).
+
+IPython可以工作在以下操作系统:
 
 	* Linux
-	* Most other Unix-like OSs (AIX, Solaris, BSD, etc.)
+	* 许多类Unix操作系统(AIX, Solaris, BSD, 等等)
 	* Mac OS X
-	* Windows (CygWin, XP, Vista, etc.)
+	* Windows (CygWin, XP, Vista, 等等)
 
-See :ref:`here <install_index>` for instructions on how to install IPython.
+请参阅 :ref:`此处 <install_index>` 的指示了解如何安装IPython.
 
 .. include:: links.txt
